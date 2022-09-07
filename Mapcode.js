@@ -237,7 +237,3 @@ let virginia = {lat: 37.720772, lng: -78.789190};
             }
         }
     }
-<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-</script>    
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRFloNFp8jAJ8v2nDb5EUghX6UrTCSszk&callback=init">
-</script>
