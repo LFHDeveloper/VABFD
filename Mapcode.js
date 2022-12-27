@@ -67,7 +67,7 @@ let virginia = {lat: 37.720772, lng: -78.789190};
                   strokeWeight: 1,
                 };
               });
-
+               /*
                 var mapLabel = new MapLabel({
                     text: 'Test',
                     position: new google.maps.LatLng(34.515233, -100.918565),
@@ -75,7 +75,7 @@ let virginia = {lat: 37.720772, lng: -78.789190};
                     fontSize: 35,
                     align: 'right'
                 });
-
+               */
                 //var infoWindow = new map.InfoWindow();
 
 
