@@ -46,7 +46,7 @@ let virginia = {lat: 37.720772, lng: -78.789190};
         }
         window.onmessage = (event) => {
             if (event.data) {
-                locations = event.data.markers;
+                //locations = event.data.markers;
                 let infowindow = new google.maps.InfoWindow();
 
                 let map = new google.maps.Map(document.getElementById('map'), {
