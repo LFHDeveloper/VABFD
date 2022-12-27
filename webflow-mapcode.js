@@ -38,7 +38,9 @@ let virginia = {lat: 37.720772, lng: -78.789190};
     }
 
     let locations = null;
+    
     function init() {
+        console.log(addresses);
         if(locations === null) { // if no locations, let page know
             window.parent.postMessage("hello", "*");
         }
