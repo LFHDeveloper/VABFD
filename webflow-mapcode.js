@@ -39,7 +39,7 @@ let virginia = {lat: 37.720772, lng: -78.789190};
 
     let locations = addresses;
     
-    function init() {
+    function initMap() {
         console.log("addresses " + addresses);
       
         if(locations === null) { // if no locations, let page know
