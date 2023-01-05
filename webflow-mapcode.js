@@ -47,8 +47,8 @@ let virginia = {lat: 37.720772, lng: -78.789190};
             console.log("locations are null");
         }
         
-        window.onmessage = (event) => {
-            console.log("message recieved");
+        //window.onmessage = (event) => {
+            console.log("message received");
             if (event.data) {
                 console.log("data");
                 console.log(event.data)
@@ -243,5 +243,5 @@ let virginia = {lat: 37.720772, lng: -78.789190};
                 }
 
             }
-        }
+        //}
     }
