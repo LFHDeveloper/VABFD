@@ -44,6 +44,7 @@ let virginia = {lat: 37.720772, lng: -78.789190};
       
         if(locations === null) { // if no locations, let page know
             window.parent.postMessage("hello", "*");
+            console.log("locations are null");
         }
         
         window.onmessage = (event) => {
