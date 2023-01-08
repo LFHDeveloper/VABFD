@@ -36,7 +36,7 @@ let virginia = {lat: 37.720772, lng: -78.789190};
             //map.setZoom(9);
         });
     }
-
+    console.log("running map script");
     let locations = addresses;
     
     function initMap() {
