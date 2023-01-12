@@ -126,12 +126,13 @@ function initMap() {
         // The map() method here has nothing to do with the Google Maps API.
         var markers = locations.map(function (location) {
             var icon = {
-                //url: icons[location.type].icon, // url
-                scaledSize: new google.maps.Size(40, 40), // scaled size
+                url: location.icon], // url
+                scaledSize: new google.maps.Size(40, 40) // scaled size
                 //origin: new google.maps.Point(0,0), // origin
                 //anchor: new google.maps.Point(0, 0) // anchor
             };
-            //var positionformatted = {location.lat, location.long}
+            //var positionformatted = {location.lat, location.
+        }
             console.log(location.position);
             let marker = new google.maps.Marker({
                 position: location.position,
@@ -146,12 +147,12 @@ function initMap() {
                     return function () {
                         let content =
                             "<strong style='font-size:18px;'>" +
-                            location.title +
+                            location.name +
                             "</strong><br>";
-                        if (location.profile) {
+                        if (location.name) {
                             content =
                                 "<strong style='font-size:18px; '>" +
-                                location.title +
+                                location.name +
                                 "</strong><br>";
                         }
                         if (location.address) {
@@ -172,7 +173,7 @@ function initMap() {
                         if (location.website) {
                             content +=
                                 "<div style='display:flex;'><a style='text-decoration: none !important; color: white !important;' href=https://www.virginiablackfarmerdirectory.com" +
-                                location.profile +
+                                location.name +
                                 " target='_blank'><div style='display:inline-block; margin-top:5px; margin-right:5px; padding:7px 12px; background-color:#DBB89A; color: white !important; text-align:center; width:75px; display:flex; justify-content:space-between;'>" +
                                 "<strong><i>Profile </i></strong><strong style='color: white !important;'> > </strong></div></a>" +
                                 "<a style='text-decoration: none !important; color: white !important;' href='" +
@@ -184,7 +185,7 @@ function initMap() {
                         } else {
                             content +=
                                 "<a style='text-decoration: none !important; color: white !important;' href=https://www.virginiablackfarmerdirectory.com" +
-                                location.profile +
+                                location.name +
                                 " target='_blank'><div style='display:inline-block; margin-top:5px; margin-right:5px; padding:7px 12px; background-color:#DBB89A; color: white !important; text-align:center; width:75px; display:flex; justify-content:space-between;'>" +
                                 "<strong><i>Profile </i></strong><strong style='color: white !important;'> > </strong></div></a>";
                         }
@@ -203,7 +204,7 @@ function initMap() {
                             "<strong style='font-size:14px;'>" +
                             location.title +
                             "</strong><br>";
-                        if (location.profile) {
+                        if (location.name) {
                             content =
                                 "<strong style='font-size:14px;'>" +
                                 location.title +
@@ -226,7 +227,7 @@ function initMap() {
                         if (location.website) {
                             content +=
                                 "<div style='display:flex;'><a style='text-decoration: none !important; color: white !important; font-size:10px;' href=https://www.virginiablackfarmerdirectory.com" +
-                                location.profile +
+                                location.name +
                                 " target='_blank'><div style='display:inline-block; margin-top:5px; margin-right:5px; padding:7px 12px; background-color:#DBB89A; color: white !important; text-align:center; width:50px; display:flex; justify-content:space-between;'>" +
                                 "<strong><i>Profile </i></strong><strong style='color: white !important;'> > </strong></div></a>" +
                                 "<a style='text-decoration: none !important; color: white !important; font-size:10px;' href='" +
@@ -238,7 +239,7 @@ function initMap() {
                         } else {
                             content +=
                                 "<a style='text-decoration: none !important; color: white !important;' href=https://www.virginiablackfarmerdirectory.com" +
-                                location.profile +
+                                location.name +
                                 " target='_blank'><div style='display:inline-block; margin-top:5px; margin-right:5px; padding:7px 12px; background-color:#DBB89A; color: white !important; text-align:center; width:75px; display:flex; justify-content:space-between;'>" +
                                 "<strong><i>Profile </i></strong><strong style='color: white !important;'> > </strong></div></a>";
                         }
