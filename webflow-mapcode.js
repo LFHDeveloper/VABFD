@@ -127,19 +127,19 @@ function initMap() {
         var markers = locations.map(function (location) {
             var icon = {
                 url: location.icon, // url
-                scaledSize: new google.maps.Size(40, 40) // scaled size
+                scaledSize: new google.maps.Size(40, 40), // scaled size
                 //origin: new google.maps.Point(0,0), // origin
                 //anchor: new google.maps.Point(0, 0) // anchor
             };
             //var positionformatted = {location.lat, location.
-        }
-            console.log(location.position);
+        
+            //console.log(location.position);
             let marker = new google.maps.Marker({
                 position: location.position,
                 icon: icon,
                 map: map,
             });
-
+        }
             google.maps.event.addListener(
                 marker,
                 "mouseover",
