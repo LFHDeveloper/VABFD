@@ -126,7 +126,7 @@ function initMap() {
         // The map() method here has nothing to do with the Google Maps API.
         var markers = locations.map(function (location) {
             var icon = {
-                url: location.icon], // url
+                url: location.icon, // url
                 scaledSize: new google.maps.Size(40, 40) // scaled size
                 //origin: new google.maps.Point(0,0), // origin
                 //anchor: new google.maps.Point(0, 0) // anchor
