@@ -171,8 +171,8 @@ function initMap() {
 
                         if (location.website) {
                             content +=
-                                "<div style='display:flex;'><a style='text-decoration: none !important; color: white !important;' href=https://www.virginiablackfarmerdirectory.com" +
-                                location.name +
+                                "<div style='display:flex;'><a style='text-decoration: none !important; color: white !important;' href=../farmers/" +
+                                location.slug +
                                 " target='_blank'><div style='display:inline-block; margin-top:5px; margin-right:5px; padding:7px 12px; background-color:#DBB89A; color: white !important; text-align:center; width:75px; display:flex; justify-content:space-between;'>" +
                                 "<strong><i>Profile </i></strong><strong style='color: white !important;'> > </strong></div></a>" +
                                 "<a style='text-decoration: none !important; color: white !important;' href='" +
