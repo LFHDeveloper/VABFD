@@ -174,11 +174,11 @@ function initMap() {
                                 "<div style='display:flex;'><a style='text-decoration: none !important; color: white !important;' href=../farmers/" +
                                 location.slug +
                                 " target='_blank'><div style='display:inline-block; margin-top:5px; margin-right:5px; padding:7px 12px; background-color:#DBB89A; color: white !important; text-align:center; width:75px; display:flex; justify-content:space-between;'>" +
-                                "<strong><i>Profile </i></strong><strong style='color: white !important;'> > </strong></div></a>" +
+                                "<strong><i>Profile</i></strong><strong style='color: white !important;'> </strong></div></a>" +
                                 "<a style='text-decoration: none !important; color: white !important;' href='" +
                                 location.website +
                                 "' target='_blank'><div style='display:inline-block; margin-top:5px; margin-right:5px; padding:7px 12px; background-color:#DBB89A; color: white !important; text-align:center; width:75px; display:flex; justify-content:space-between;'>" +
-                                "<strong><i>Website </i></strong><strong style='color: white !important;'> > </strong></div></a></div>";
+                                "<strong><i>Website</i></strong><strong style='color: white !important;'> </strong></div></a></div>";
 
                             //content += "<strong>Wesbite: </strong><i> Click marker to visit website </i><br>"
                         } else {
@@ -186,7 +186,7 @@ function initMap() {
                                 "<a style='text-decoration: none !important; color: white !important;' href=https://www.virginiablackfarmerdirectory.com" +
                                 location.name +
                                 " target='_blank'><div style='display:inline-block; margin-top:5px; margin-right:5px; padding:7px 12px; background-color:#DBB89A; color: white !important; text-align:center; width:75px; display:flex; justify-content:space-between;'>" +
-                                "<strong><i>Profile </i></strong><strong style='color: white !important;'> > </strong></div></a>";
+                                "<strong><i>Profile</i></strong><strong style='color: white !important;'></strong></div></a>";
                         }
 
                         infowindow.setContent(content);
@@ -228,11 +228,11 @@ function initMap() {
                                 "<div style='display:flex;'><a style='text-decoration: none !important; color: white !important; font-size:10px;' href=https://www.virginiablackfarmerdirectory.com" +
                                 location.name +
                                 " target='_blank'><div style='display:inline-block; margin-top:5px; margin-right:5px; padding:7px 12px; background-color:#DBB89A; color: white !important; text-align:center; width:50px; display:flex; justify-content:space-between;'>" +
-                                "<strong><i>Profile </i></strong><strong style='color: white !important;'> > </strong></div></a>" +
+                                "<strong><i>Profile </i></strong><strong style='color: white !important;'></strong></div></a>" +
                                 "<a style='text-decoration: none !important; color: white !important; font-size:10px;' href='" +
                                 location.website +
                                 "' target='_blank'><div style='display:inline-block; margin-top:5px; margin-right:5px; padding:7px 12px; background-color:#DBB89A; color: white !important; text-align:center; width:50px; display:flex; justify-content:space-between;'>" +
-                                "<strong><i>Website </i></strong><strong style='color: white !important;'> > </strong></div></a></div>";
+                                "<strong><i>Website </i></strong><strong style='color: white !important;'></strong></div></a></div>";
 
                             //content += "<strong>Wesbite: </strong><i> Click marker to visit website </i><br>"
                         } else {
@@ -240,7 +240,7 @@ function initMap() {
                                 "<a style='text-decoration: none !important; color: white !important;' href=https://www.virginiablackfarmerdirectory.com" +
                                 location.name +
                                 " target='_blank'><div style='display:inline-block; margin-top:5px; margin-right:5px; padding:7px 12px; background-color:#DBB89A; color: white !important; text-align:center; width:75px; display:flex; justify-content:space-between;'>" +
-                                "<strong><i>Profile </i></strong><strong style='color: white !important;'> > </strong></div></a>";
+                                "<strong><i>Profile </i></strong><strong style='color: white !important;'></strong></div></a>";
                         }
                         infowindow.setContent(content);
                         infowindow.open(map, marker);
