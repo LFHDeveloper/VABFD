@@ -36,7 +36,7 @@ function RestoreControl(controlDiv, map) {
         //map.setZoom(9);
     });
 }
-let addresses = addresses || [];
+let addresses = addresses;
 
 let locations = addresses;
 
