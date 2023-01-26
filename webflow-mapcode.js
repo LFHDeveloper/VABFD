@@ -276,5 +276,5 @@ function initMap() {
                 map.setZoom(6);
             }
         }
-    }
+    });
 }
