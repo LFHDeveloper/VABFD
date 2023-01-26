@@ -1,6 +1,6 @@
 //let virginia = { lat: 37.720772, lng: -78.78919 };
-let addresses = [];
-let locations = addresses;
+var addresses = [];
+var locations = addresses;
 /**
  * The RestoreControl adds a control to the map that resets the zoom,
  * and recenters the map on Barcelona.
@@ -40,7 +40,7 @@ function RestoreControl(controlDiv, map) {
 }
 
 function initMap() {
-    let locations = addresses;
+    var locations = addresses;
     console.log("addresses " + addresses);
 
     if (locations === null) {
