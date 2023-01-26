@@ -1,4 +1,4 @@
-let virginia = { lat: 37.720772, lng: -78.78919 };
+//let virginia = { lat: 37.720772, lng: -78.78919 };
 //let addresses = addresses;
 /**
  * The RestoreControl adds a control to the map that resets the zoom,
@@ -33,7 +33,7 @@ function RestoreControl(controlDiv, map) {
 
     // Setup the click event listeners: simply set the map to Chicago.
     controlUI.addEventListener("click", function () {
-        map.setCenter(virginia);
+        map.setCenter({ lat: 37.720772, lng: -78.78919 });
         //map.setZoom(9);
     });
 }
