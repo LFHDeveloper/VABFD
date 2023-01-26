@@ -252,12 +252,12 @@ function initMap() {
         });
 
         // Add a marker clusterer to manage the markers.
-        var markerCluster = new MarkerClusterer(map, markers, {
-            gridSize: 20,
+        /*var markerCluster = new MarkerClusterer(map, markers, {
+        /    gridSize: 20,
             maxZoom: 3,
             imagePath:
                 "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
-        });
+        });*/
 
         // Create the DIV to hold the control and call the CenterControl()
         // constructor passing in this DIV.
