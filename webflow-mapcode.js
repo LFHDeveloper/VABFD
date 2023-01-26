@@ -55,7 +55,7 @@ function initMap() {
         let map = new google.maps.Map(document.getElementById("map"), {
             zoom: 7,
             streetViewControl: false,
-            center: virginia,
+            center: { lat: 37.720772, lng: -78.78919 },
         });
 
         map.data.loadGeoJson(
