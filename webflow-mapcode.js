@@ -43,12 +43,12 @@ function RestoreControl(controlDiv, map) {
 function initMap() {
     $(window).on('load', function() {
         var locations = addresses;
-        console.log("addresses " + addresses);
+        //console.log("addresses " + addresses);
 
         if (locations === null) {
             // if no locations, let page know
             window.parent.postMessage("hello", "*");
-            console.log("locations are null");
+            //console.log("locations are null");
         }
         else{
 
@@ -135,7 +135,7 @@ function initMap() {
                     //anchor: new google.maps.Point(0, 0) // anchor
                 };
 
-                console.log(location.position);
+                //console.log(location.position);
                 let marker = new google.maps.Marker({
                     position: location.position,
                     icon: icon,
