@@ -1,4 +1,3 @@
-//let virginia = { lat: 37.720772, lng: -78.78919 };
 var addresses = [];
 var locations = addresses;
 /**
@@ -174,7 +173,7 @@ function initMap() {
 
                             if (location.website) {
                                 content +=
-                                    "<div style='display:flex;'><a style='text-decoration: none !important; color: white !important;' href=../farmers/" +
+                                    "<div style='display:flex; justify-content: center;'><a style='text-decoration: none !important; color: white !important;' href=../farmers/" +
                                     location.slug +
                                     " target='_blank'><div style='display:inline-block; margin-top:5px; margin-right:5px; padding:7px 12px; background-color:#DBB89A; color: white !important; text-align:center; width:75px; display:flex; justify-content:space-between;'>" +
                                     "<strong><i>Profile</i></strong><strong style='color: white !important;'> </strong></div></a>" +
@@ -204,12 +203,12 @@ function initMap() {
                         return function () {
                             let content =
                                 "<strong style='font-size:14px;'>" +
-                                location.title +
+                                location.name +
                                 "</strong><br>";
                             if (location.name) {
                                 content =
                                     "<strong style='font-size:14px;'>" +
-                                    location.title +
+                                    location.name +
                                     "</strong><br>";
                             }
                             if (location.address) {
@@ -228,7 +227,7 @@ function initMap() {
                             //console.log(location.website);
                             if (location.website) {
                                 content +=
-                                    "<div style='display:flex;'><a style='text-decoration: none !important; color: white !important; font-size:10px;' href=https://www.virginiablackfarmerdirectory.com" +
+                                    "<div style='display:flex; justify-content: center;'><a style='text-decoration: none !important; color: white !important; font-size:10px;' href=https://www.virginiablackfarmerdirectory.com" +
                                     location.name +
                                     " target='_blank'><div style='display:inline-block; margin-top:5px; margin-right:5px; padding:7px 12px; background-color:#DBB89A; color: white !important; text-align:center; width:50px; display:flex; justify-content:space-between;'>" +
                                     "<strong><i>Profile </i></strong><strong style='color: white !important;'></strong></div></a>" +
