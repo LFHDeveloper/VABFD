@@ -172,10 +172,10 @@ function initMap() {
                             //console.log(location.website);
                             content += "<div style='display:flex; justify-content: center;'>";
                             
-                            if (location.type = "farm"){
+                            if (location.type == "farm"){
                                 content += "<a style='text-decoration: none !important; color: white !important;' href='../farmers/" + location.slug +
                                         "' target='_blank'><div style='display:inline-block; margin-top:5px; margin-right:5px; padding:7px 12px; background-color:#DBB89A; color: white !important; text-align:center; width:75px; display:flex; justify-content:space-between;'>" +
-                                    "<strong style='color: white !important;'><i>Profile</i></strong></div></a>";   
+                                    "<strong style='color: white !important;'><i>Profile "+location.type+"</i></strong></div></a>";   
                             }
                             if (location.website) {
                                 content +=
@@ -199,12 +199,12 @@ function initMap() {
                     (function (marker) {
                         return function () {
                             let content =
-                                "<strong style='font-size:14px;'>" +
+                                 "<strong style='font-size:18px;'>" +
                                 location.name +
                                 "</strong><br>";
                             if (location.name) {
                                 content =
-                                    "<strong style='font-size:14px;'>" +
+                                    "<strong style='font-size:18px; '>" +
                                     location.name +
                                     "</strong><br>";
                             }
