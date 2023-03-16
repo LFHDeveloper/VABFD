@@ -170,26 +170,24 @@ function initMap() {
                                     "</i><br>";
                             }
                             //console.log(location.website);
-
+                            content += "<div style='display:flex; justify-content: center;'><a style='text-decoration: none !important; color: white !important;' href=../farmers/" +
+                                       location.slug + " target='_blank'>";
+                            
+                            if (location.type = "farm"){
+                                content += "<div style='display:inline-block; margin-top:5px; margin-right:5px; padding:7px 12px; background-color:#DBB89A; color: white !important; text-align:center; width:75px; display:flex; justify-content:space-between;'>" +
+                                    "<strong><i>Profile</i></strong><strong style='color: white !important;'> </strong></div></a>";
+                                
+                            }
                             if (location.website) {
                                 content +=
-                                    "<div style='display:flex; justify-content: center;'><a style='text-decoration: none !important; color: white !important;' href=../farmers/" +
-                                    location.slug +
-                                    " target='_blank'><div style='display:inline-block; margin-top:5px; margin-right:5px; padding:7px 12px; background-color:#DBB89A; color: white !important; text-align:center; width:75px; display:flex; justify-content:space-between;'>" +
-                                    "<strong><i>Profile</i></strong><strong style='color: white !important;'> </strong></div></a>" +
                                     "<a style='text-decoration: none !important; color: white !important;' href='" +
                                     location.website +
                                     "' target='_blank'><div style='display:inline-block; margin-top:5px; margin-right:5px; padding:7px 12px; background-color:#DBB89A; color: white !important; text-align:center; width:75px; display:flex; justify-content:space-between;'>" +
-                                    "<strong><i>Website</i></strong><strong style='color: white !important;'> </strong></div></a></div>";
+                                    "<strong><i>Website</i></strong><strong style='color: white !important;'> </strong></div></a>";
 
                                 //content += "<strong>Wesbite: </strong><i> Click marker to visit website </i><br>"
-                            } else {
-                                content +=
-                                    "<a style='text-decoration: none !important; color: white !important;' href=https://www.virginiablackfarmerdirectory.com" +
-                                    location.name +
-                                    " target='_blank'><div style='display:inline-block; margin-top:5px; margin-right:5px; padding:7px 12px; background-color:#DBB89A; color: white !important; text-align:center; width:75px; display:flex; justify-content:space-between;'>" +
-                                    "<strong><i>Profile</i></strong><strong style='color: white !important;'></strong></div></a>";
                             }
+                            content += "</div>";
 
                             infowindow.setContent(content);
                             infowindow.open(map, marker);
