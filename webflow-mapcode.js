@@ -73,7 +73,7 @@ function initMap() {
                     strokeWeight: 1,
                 };
             });
-            map.data.addListener("hover", (event) => {
+            map.data.addListener("mouseover", (event) => {
                 map.data.revertStyle();
                 map.data.overrideStyle(event.feature, { strokeWeight: 4 });
             });
