@@ -74,7 +74,7 @@ function initMap() {
                 };
             });
 
-            map.data.addListener("mouseover", (event) => {
+            map.data.addListener("click", (event) => {
                 map.data.revertStyle();
                 map.data.overrideStyle(event.feature, { strokeWeight: 4 });
                 //console.log(event.feature);
