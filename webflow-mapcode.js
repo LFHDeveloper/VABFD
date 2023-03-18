@@ -73,7 +73,10 @@ function initMap() {
                     strokeWeight: 1,
                 };
             });
-
+            map.data.addListener("hover", (event) => {
+                map.data.revertStyle();
+                map.data.overrideStyle(event.feature, { strokeWeight: 4 });
+            });
             map.data.addListener("click", (event) => {
                 map.data.revertStyle();
                 map.data.overrideStyle(event.feature, { strokeWeight: 4 });
@@ -90,17 +93,11 @@ function initMap() {
                 //infowindow.setPosition({lat: event.feature.getProperty("labellat"), lng: event.feature.getProperty("labellng")});
 
                 infowindow.setPosition(position);
-                //infowindow.setPosition(event.feature.getProperty("labellat"));
-                //console.log("test southwest");
+
                 infowindow.setContent(
                     event.feature.getProperty("name") + " Region"
                 );
-                //var latLng = event.latLng;
-                //console.log(event.feature.getProperty("labelcords"));
-
-                //console.log(infowindow);
-                //console.log(infowindow.getPosition());
-
+                
                 infowindow.open({
                     map,
                     shouldFocus: false,
