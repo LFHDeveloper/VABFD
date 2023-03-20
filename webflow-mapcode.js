@@ -170,13 +170,13 @@ function initMap() {
                             content += "<div style='display:flex; justify-content: center;'>";
                             
                             if (location.type == "farm"){
-                                content += "<a style='text-decoration: none !important; color: white !important;' href='../farmers/" + location.slug +
+                                content += "<a style='text-decoration: none !important; color: white !important; border-style: none;' href='../farmers/" + location.slug +
                                         "' target='_blank'><div style='display:inline-block; margin-top:5px; margin-right:5px; padding:7px 12px; background-color:#DBB89A; color: white !important; text-align:center; width:75px;'>" +
                                     "<strong style='color: white !important;'><i>Profile</i></strong></div></a>";   
                             }
                             if (location.website) {
                                 content +=
-                                    "<a style='text-decoration: none !important; color: white !important;' href='" + location.website +  "' target='_blank'>" +
+                                    "<a style='text-decoration: none !important; color: white !important; border-style: none;' href='" + location.website +  "' target='_blank'>" +
                                     "<div style='display:inline-block; margin-top:5px; margin-right:5px; padding:7px 12px; background-color:#DBB89A; color: white !important; text-align:center; width:75px;'>" +
                                     "<strong><i>Website</i></strong><strong style='color: white !important;'> </strong></div></a>";
 
@@ -221,13 +221,13 @@ function initMap() {
                             content += "<div style='display:flex; justify-content: center;'>";
                             
                             if (location.type == "farm"){
-                                content += "<a style='text-decoration: none !important; color: white !important;' href='../farmers/" + location.slug +
+                                content += "<a style='text-decoration: none !important; color: white !important; border-style: none;' href='../farmers/" + location.slug +
                                         "' target='_blank'><div style='display:inline-block; margin-top:5px; margin-right:5px; padding:7px 12px; background-color:#DBB89A; color: white !important; text-align:center; width:75px;'>" +
                                     "<strong style='color: white !important;'><i>Profile</i></strong></div></a>";   
                             }
                             if (location.website) {
                                 content +=
-                                    "<a style='text-decoration: none !important; color: white !important;' href='" + location.website +  "' target='_blank'>" +
+                                    "<a style='text-decoration: none !important; color: white !important; border-style: none;' href='" + location.website +  "' target='_blank'>" +
                                     "<div style='display:inline-block; margin-top:5px; margin-right:5px; padding:7px 12px; background-color:#DBB89A; color: white !important; text-align:center; width:75px;'>" +
                                     "<strong><i>Website</i></strong><strong style='color: white !important;'> </strong></div></a>";
 
